@@ -77,7 +77,7 @@ branches = RunnableBranch(
 classification_chain = classification_template | model | StrOutputParser()
 
 # Combine classification and response generation into one chain
-chain = classification_chain | branches
+chain = classification_chain | branches 
 
 # Run the chain with an example review
 # Good review - "The product is excellent. I really enjoyed using it and found it very helpful."
