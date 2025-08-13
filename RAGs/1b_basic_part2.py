@@ -1,5 +1,5 @@
 import os
-from langchain_chroma import Chroma
+from langchain_chroma import  Chroma
 from langchain_openai import OpenAIEmbeddings
 
 # Define the persistent directory
@@ -15,7 +15,7 @@ db = Chroma(persist_directory=persistent_directory,
 
 # Define the user's question
 query = "Where does Gandalf meet Frodo?"
-
+ 
 # Retrieve relevant documents based on the query
 retriever = db.as_retriever(
     search_type="similarity_score_threshold",
